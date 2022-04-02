@@ -232,6 +232,8 @@ class Graph {
 			auto stop = high_resolution_clock::now();
 				cout << endl << endl << "Execution time = " << duration_cast<milliseconds>(stop - start).count() << " ms" << endl << endl << endl;
 			
+			cout << "Nb visited = " << D.size() << endl << endl;
+
 			vector<Line> w;
 			int j=(int) D.size()-1;
 			w.push_back(D[j][0]);
